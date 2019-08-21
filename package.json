@@ -1,0 +1,41 @@
+{
+  "name": "apollo-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "nodemon": "nodemon ./build/server.js",
+    "lint": "./node_modules/tslint/bin/tslint -c tslint.json -p tsconfig.json --exclude 'node_modules/**/*.{j,t}s'",
+    "lint:fix": "npm run lint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalnirwan1/apollo-training.git"
+  },
+  "author": "Kuldeep kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalnirwan1/apollo-training/issues"
+  },
+  "homepage": "https://github.com/vishalnirwan1/apollo-training#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.8.1",
+    "babel": "^6.23.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "graphql": "^14.4.2",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^6.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.1",
+    "tsc-watch": "^2.4.0"
+  }
+}
