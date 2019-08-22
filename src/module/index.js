@@ -1,4 +1,4 @@
-import  {User as me}  from './user';
+import  {user as me}  from './user';
 import {Trainee as trainee} from './trainee';
 // console.log(trainee);
 const resolvers = {
