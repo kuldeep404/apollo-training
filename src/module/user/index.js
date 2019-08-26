@@ -1,1 +1,1 @@
-export { default as user } from './query.js';
+export { default as user } from './query';
