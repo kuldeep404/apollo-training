@@ -1,4 +1,18 @@
-type trainee {
-    name: String,
+type result {
+ do:[allTrainee]
+}
+
+type allTrainee {
+    status: String
+    message: String
+    data: [traineelist]
+}
+type traineelist {
+    id: ID
+    createdBy: String
+    UpdatedBy: String
+    password: String
     email: String
+    name: String
+    role: String
 }
