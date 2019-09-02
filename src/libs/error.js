@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import {
-  AuthenticationError, ForbiddenError, UserInputError, AppolloError,
+  AuthenticationError, ForbiddenError, UserInputError, ApolloError,
 } from 'apollo-server-core';
 
 export default class ErrorHandling {
@@ -30,6 +30,6 @@ export default class ErrorHandling {
   }
 
   AppolloError(error) {
-    throw new AppolloError(error.message, error.status, error);
+    throw new ApolloError(error.message);
   }
 }
