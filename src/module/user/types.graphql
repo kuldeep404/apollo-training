@@ -1,5 +1,5 @@
 type allUser {
-    status: String
+    status: Int
     message: String
     data: traineelist
 }
@@ -12,3 +12,13 @@ type traineelist {
     name: String
     role: String
 }
+input loginInput {
+   password: String
+   email: String
+}
+ type login {
+     message: String
+     status: Int
+     data: String
+ }
+

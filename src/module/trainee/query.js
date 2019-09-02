@@ -1,10 +1,12 @@
+import ErrorHandling from '../../libs/error';
+
 const Trainee = {
-   trainee : async(parent, args, { dataSources }) => {
-    // eslint-disable-next-line no-console
-    // console.log('data source is ', dataSources.traineeApi.getTrainee);
+  trainee: async (parent, args, { dataSources }) => {
     const result = await dataSources.traineeApi.getTrainee();
-    // console.log('----------',result[0].status)
-    return result
+    if (result.error) {
+      throw new ErrorHandling(result);
+    }
+    return result;
   },
 };
 export default Trainee;
