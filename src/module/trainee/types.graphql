@@ -1,12 +1,13 @@
 type result {
- do:[allTrainee]
+    do:[allTrainee]
 }
 
 type allTrainee {
-    status: String
+    status: Int
     message: String
     data: [traineelist]
 }
+
 type traineelist {
     id: ID
     createdBy: String
@@ -15,4 +16,40 @@ type traineelist {
     email: String
     name: String
     role: String
+}
+ 
+input createInput {
+   name: String
+   password: String
+   email: String
+}
+
+type createTrainee{
+    data: traineelist
+    message: String
+    status: Int
+}
+
+type updateTrainee {
+    message: String
+    status: Int
+    data: updateValue
+}
+
+type updateValue{
+    id: String
+}
+
+input updateInput{
+    id: String
+    dataToUpdate: createInput
+}
+
+input deleteInput{
+    id: String
+}
+type deleteTrainee {
+    message: String
+    status: Int
+    data: String
 }

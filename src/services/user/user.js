@@ -15,5 +15,9 @@ class UserApi extends RESTDataSource {
     const result = await this.get('user/me');
     return result;
   }
+
+  async login(email, password) {
+    return this.post('user/login', { email, password });
+  }
 }
 export default UserApi;
