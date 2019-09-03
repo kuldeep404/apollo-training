@@ -1,5 +1,5 @@
 type Query {
-    trainee: [allTrainee]
+    trainee: allTrainee
     me: allUser
 }
 

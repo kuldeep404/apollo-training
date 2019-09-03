@@ -1,5 +1,5 @@
 type result {
- do:[allTrainee]
+    do:[allTrainee]
 }
 
 type allTrainee {

@@ -26,8 +26,7 @@ const server = new ApolloServer({
       return connection.context;
     }
     // check from req
-    const token = req.headers.authorization || '';
-    return { token };
+    return { token: req.headers.authorization || '' };
   },
 });
 // server.applyMiddleware({ app });

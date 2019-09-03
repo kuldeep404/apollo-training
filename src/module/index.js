@@ -1,5 +1,5 @@
 import { user as me, userMutation, userSubscription } from './user';
-import { Trainee as trainee, traineeMutation, traineeSubscription } from './trainee';
+import { trainee, traineeMutation, traineeSubscription } from './trainee';
 
 const resolvers = {
   Query: {
